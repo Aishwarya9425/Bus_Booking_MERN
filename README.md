@@ -2,7 +2,7 @@
 
 Site is live at https://busbookmern.onrender.com 
 
-## Login samples -
+## Login samples Or you can also create new users via register
 aishu@email.com [admin]
 password: 123456
 
