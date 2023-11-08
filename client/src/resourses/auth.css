@@ -1,0 +1,7 @@
+.auth {
+  /* background-color: var(--secondary); */
+  background-image: url("https://img.freepik.com/free-vector/background-realistic-abstract-technology-particle_23-2148431735.jpg?w=996&t=st=1699340579~exp=1699341179~hmac=dea9e8069dcdc2822e496822379abcb81458c849e768597bd93cdd269d8668bf");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
