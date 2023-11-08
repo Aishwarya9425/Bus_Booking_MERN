@@ -1,26 +1,19 @@
-const express = require('express');
+const express = require("express");
 const app = express();
-const connectDB = require('./config/dbConfig');
-
-require('dotenv').config();
-
+require("dotenv").config();
+const dbConfig = require("./config/dbConfig");
 const port = process.env.PORT || 5000;
-
-connectDB();
-
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
 
-const usersRoute = require('./routes/usersRoute');
-const busesRoute = require('./routes/busesRoute');
-const bookingsRoute = require('./routes/bookingsRoute');
+const usersRoute = require("./routes/usersRoute");
+const busesRoute = require("./routes/busesRoute");
+const bookingsRoute = require("./routes/bookingsRoute");
 
-app.use('/api/users', usersRoute);
-app.use('/api/buses', busesRoute);
-app.use('/api/bookings', bookingsRoute);
-const path = require('path');
+app.use("/api/users", usersRoute);
+app.use("/api/buses", busesRoute);
+app.use("/api/bookings", bookingsRoute);
+const path = require("path");
 
-// for build.. 
 if (process.env.NODE_ENV === 'production') {
   const __dirname = path.resolve();
   app.use('/uploads', express.static('/var/data/uploads'));
@@ -37,6 +30,4 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
-app.listen(port, () =>
-  console.log(`Server running in ${process.env.NODE_ENV} mode on port ${port}`)
-);
+app.listen(port, () => console.log(`Node server listening on port ${port}!`));
