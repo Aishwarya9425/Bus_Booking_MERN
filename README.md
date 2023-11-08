@@ -1,6 +1,6 @@
 # Bus_Booking_MERN
 
-
+Site is live at https://busbookmern.onrender.com 
 
 ## Login samples -
 aishu@email.com [admin]
@@ -12,6 +12,17 @@ password: 123456
 ram@email.com [user]
 password: 123456
 
+## Sample env file
+
+mongo_url = ""
+
+jwt_secret = ""
+
+stripe_secret_key = ""
+
+NODE_ENV=development
+
+PORT=5000
 
 ## Mongo DB
 
